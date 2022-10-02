@@ -6,5 +6,5 @@ public class Storages : MonoBehaviour
 {
     public static SpaceShip MainSpaceShip;
     public static int CurrentPlanetID = 1;
-
+    public static int DaysInCurrentPlanet = 1;
 }

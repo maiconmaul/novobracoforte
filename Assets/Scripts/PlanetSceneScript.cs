@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlanetSceneScript : MonoBehaviour
@@ -8,12 +9,11 @@ public class PlanetSceneScript : MonoBehaviour
     public SpriteRenderer spriteEarth;
     public SpriteRenderer spriteMars;
     [SerializeField] private TextMeshProUGUI daysOnThisPlanet;
-    int days;
+    int days = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Storages.CurrentPlanetID.ToString());
         if (Storages.CurrentPlanetID != 1)
         {
             this.spriteEarth.enabled = false;
@@ -36,5 +36,10 @@ public class PlanetSceneScript : MonoBehaviour
     {
         days++;
         daysOnThisPlanet.text = "DAYS: " + days.ToString();
+    }
+
+    public void TravelNextPlanet()
+    {
+        SceneManager.LoadScene("TraveScene");
     }
 }

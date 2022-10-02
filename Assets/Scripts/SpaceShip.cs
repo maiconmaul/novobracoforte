@@ -40,5 +40,4 @@ public class SpaceShip
     {
         this.resistence -= life;
     }
-
 }
