@@ -5,7 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class squareMovement : MonoBehaviour
 {
 
@@ -52,6 +52,7 @@ public class squareMovement : MonoBehaviour
        
         if (other.gameObject.tag == "Meteor")
         {
+            Destroy(other.gameObject);
             ship.removeLife(1);
             slider.value -= 1;
         }
@@ -73,6 +74,7 @@ public class squareMovement : MonoBehaviour
         if (ship.getResistence() == 0)
         {
             this.gameObject.SetActive(false);
+            SceneManager.LoadScene("PlanetScene");
            
         }
        
