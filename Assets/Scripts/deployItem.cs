@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class deployItem : MonoBehaviour
 {
-    public GameObject meteor,dna;
+    public GameObject meteor,dna,radiation;
     public float respawnTime = 1.0f;
     private Vector2 screenBounds;
     // Start is called before the first frame update
@@ -28,6 +28,9 @@ public class deployItem : MonoBehaviour
         if (r < 10)
         {
             a = Instantiate(dna) as GameObject;
+        }
+        else if (r < 30) {
+            a = Instantiate(radiation) as GameObject;
         }
         else {
             a = Instantiate(meteor) as GameObject;

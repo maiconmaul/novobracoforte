@@ -63,7 +63,13 @@ public class squareMovement : MonoBehaviour
             dnaText.text = txt;
             Destroy(other.gameObject);
         }
-        
+        if (other.gameObject.tag == "radiation")
+        {
+
+            ship.removeLife(2);
+            slider.value -= 2;
+        }
+
         if (ship.getResistence() == 0)
         {
             this.gameObject.SetActive(false);
@@ -74,5 +80,10 @@ public class squareMovement : MonoBehaviour
 
 
 
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        
     }
 }

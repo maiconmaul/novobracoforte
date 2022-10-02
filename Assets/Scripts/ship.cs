@@ -37,9 +37,9 @@ public class ship : MonoBehaviour
         if(gameObject.tag == "Meteor")
         {
             Destroy(this.gameObject);
-            Debug.Log("teststs");
-            GameObject e = Instantiate(animation) as GameObject;
-            e.transform.position = transform.position;
+            //Debug.Log("teststs");
+            //GameObject e = Instantiate(animation) as GameObject;
+            //e.transform.position = transform.position;
             
         }
     }
