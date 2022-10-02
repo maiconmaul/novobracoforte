@@ -83,7 +83,13 @@ public class squareMovement : MonoBehaviour
 
 
     }
+    private void moveUp() { 
 
+    }
+
+    private void moveDown() { 
+
+    }
     private void OnTriggerStay2D(Collider2D other)
     {
         

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class SpaceShip
 {
     //default res = 4, pisci = 4;
-    private int pisciological, resistence, metabolism,dnaCount;
+    private int pisciological, resistence, resistenceMax, RadiationRes, metabolism,dnaCount;
 
 
 
