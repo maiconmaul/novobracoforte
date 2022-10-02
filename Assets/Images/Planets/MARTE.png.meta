@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64f0280ef5d754c3a9d5c5d2e55af163
+guid: 4a41c475863e049b98a39edea1b593ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: earth_0
+      name: MARTE_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d07956410c69435082da76a01d9ec96
-      internalID: -1379244429
+      spriteID: 9a392a5ecc5e241aaa5a3aa47ba2ee68
+      internalID: 963459924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: earth_1
+      name: MARTE_1
       rect:
         serializedVersion: 2
         x: 58
@@ -146,20 +146,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47ba5add674884d43ada529988534a68
-      internalID: 324429117
+      spriteID: 67c91895323144888b850b2864361891
+      internalID: 1938879435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: earth_2
+      name: MARTE_2
       rect:
         serializedVersion: 2
         x: 116
@@ -167,20 +167,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7816966d0b5e241d48fb154a98a601f7
-      internalID: 802880230
+      spriteID: f7b969ed9274c416e97ba149d62d2941
+      internalID: -1315232655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: earth_3
+      name: MARTE_3
       rect:
         serializedVersion: 2
         x: 174
@@ -188,98 +188,14 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be594586431984b7d8e20255e60e5e79
-      internalID: 383270148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: earth_4
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ef385a30db514e2f883d941687e2ea6
-      internalID: 272475878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: earth_5
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3aac69cd4b9844c998c60046828ccead
-      internalID: 1919909230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: earth_6
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89f1204e0b1064d97acc9f518f80c416
-      internalID: -518991621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: earth_7
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcd44857a28ef434982841399d75c1d6
-      internalID: 940516177
+      spriteID: fb054281c835b4338a819b1da7d56d50
+      internalID: -1399951835
       vertices: []
       indices: 
       edges: []
@@ -295,14 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      earth_5: 1919909230
-      earth_7: 940516177
-      earth_1: 324429117
-      earth_6: -518991621
-      earth_3: 383270148
-      earth_2: 802880230
-      earth_0: -1379244429
-      earth_4: 272475878
+      MARTE_3: -1399951835
+      MARTE_0: 963459924
+      MARTE_1: 1938879435
+      MARTE_2: -1315232655
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
