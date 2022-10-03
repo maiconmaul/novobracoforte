@@ -51,4 +51,14 @@ public class SpaceShip
   {
     this.resistence -= life;
   }
+
+  public void AddRadiationResistance(int points)
+  {
+    this.radiationRes += points;
+  }
+
+  public void RemoveDNA(int points)
+  {
+    this.dnaCount -= points;
+  }
 }

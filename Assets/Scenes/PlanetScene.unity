@@ -745,7 +745,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 138781454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736122391}
+        m_TargetAssemblyTypeName: PlanetSceneScript, Assembly-CSharp
+        m_MethodName: BuyUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &138781454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2278,7 +2290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 374088744}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736122391}
+        m_TargetAssemblyTypeName: PlanetSceneScript, Assembly-CSharp
+        m_MethodName: BuyUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &374088744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7141,7 +7165,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709934206}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736122391}
+        m_TargetAssemblyTypeName: PlanetSceneScript, Assembly-CSharp
+        m_MethodName: BuyUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1709934206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9121,7 +9157,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2117653299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 736122391}
+        m_TargetAssemblyTypeName: PlanetSceneScript, Assembly-CSharp
+        m_MethodName: BuyUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2117653299
 MonoBehaviour:
   m_ObjectHideFlags: 0
