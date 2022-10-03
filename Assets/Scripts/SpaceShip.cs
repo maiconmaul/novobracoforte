@@ -4,11 +4,11 @@ using System.Collections.Generic;
 public class SpaceShip
 {
   //default res = 4, pisci = 4;
-  private int pisciological, metabolism, dnaCount;
-  float radiationRes, resistence, resistenceMax;
+  private int metabolism, dnaCount;
+  float radiationRes, resistence, resistenceMax, pisciological;
 
 
-  public SpaceShip(int pisciological, float resistenceMax)
+  public SpaceShip(float pisciological, float resistenceMax)
   {
     this.pisciological = pisciological;
     this.resistenceMax = resistenceMax;
@@ -37,7 +37,7 @@ public class SpaceShip
     this.resistence += res;
   }
 
-  public int getPisciological()
+  public float getPisciological()
   {
     return this.pisciological;
   }

@@ -12,5 +12,7 @@ public class Storages
     public static Upgrades RatTalent = new Upgrades(3, "", 10, 1, 0, 0, 0); 
     public static Upgrades TardigradeTalent = new Upgrades(4, "", 10, 1, 0, 0, 0); 
     public static Upgrades GravityTalent = new Upgrades(5, "", 9999, 0, 0, 0, 0); 
-    public static Upgrades EnvironmentTalent = new Upgrades(6, "", 9999, 0, 0, 0, 0); 
+    public static Upgrades EnvironmentTalent = new Upgrades(6, "", 9999, 0, 0, 0, 0);
+    public static bool stop = false;
+
 }

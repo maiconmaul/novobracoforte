@@ -15,8 +15,11 @@ public class back : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 offset = new Vector2((Time.time * speed) * -1, 0);
-        GetComponent<Renderer>().material.mainTextureOffset = offset;
+        if (!Storages.stop)
+        {
+            Vector2 offset = new Vector2((Time.time * speed) * -1, 0);
+            GetComponent<Renderer>().material.mainTextureOffset = offset;
+        }
 
     }
 }

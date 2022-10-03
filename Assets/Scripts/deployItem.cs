@@ -61,12 +61,12 @@ public class deployItem : MonoBehaviour
     private void tryRespawnSuply()
     {
         int r = Random.Range(0, 100);
-        if(r < 100)
+        if(r < 35)
         {
             GameObject a = Instantiate(suplyLife) as GameObject;
             a.transform.position = new Vector2(screenBounds.x * 2, Random.Range(screenBounds.y, -screenBounds.y));
         
 
-    }
+        }
     }
 }

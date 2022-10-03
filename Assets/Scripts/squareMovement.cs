@@ -13,23 +13,32 @@ public class squareMovement : MonoBehaviour
    // public GameObject explosion;
 
     public TextMeshProUGUI dnaText;
+    public float sanity;
     public Slider slider;
+    //public Slider sliderSanity;
     // Start is called before the first frame update
     void Start()
     {
         //ship = new SpaceShip(4,4);
+        sanity = 5 * Storages.MainSpaceShip.getPisciological();
+        //sliderSanity.maxValue = 5 * Storages.MainSpaceShip.getPisciological();
+       // sliderSanity.value = 5;
         slider.maxValue = Storages.MainSpaceShip.ResistenceMax;
         slider.value = Storages.MainSpaceShip.getResistence();
         String txt = Storages.MainSpaceShip.DnaCount.ToString();
         if (txt.Length == 1)
             txt = "0" + txt;
         dnaText.text = txt;
+        //StartCoroutine(sanityWave());
     }
     public float vel = 0.1f;
+    
+
+    
     // Update is called once per frame
     void Update()
-    {
-       
+    {  
+
        if (Input.GetKey(KeyCode.UpArrow))  
         {  
             Vector3 position = this.transform.position;
@@ -87,6 +96,7 @@ public class squareMovement : MonoBehaviour
         if (Storages.MainSpaceShip.getResistence() <= 0)
         {
             this.gameObject.SetActive(false);
+            Storages.stop = true;
             SceneManager.LoadScene("PlanetScene");
            
         }
@@ -96,15 +106,5 @@ public class squareMovement : MonoBehaviour
 
 
     }
-    private void moveUp() { 
-
-    }
-
-    private void moveDown() { 
-
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        
-    }
+   
 }
