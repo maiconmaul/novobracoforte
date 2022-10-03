@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class deployItem : MonoBehaviour
 {
-    public GameObject meteor,dna,radiation;
+    public GameObject meteor,dna,radiation,suplyLife;
     public float respawnTime = 1.0f;
     private Vector2 screenBounds;
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(640, 480, false);
+       // Screen.SetResolution(640, 480, false);
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(itemWave());
+        StartCoroutine(suplyWave());
 
     }
 
@@ -34,6 +35,7 @@ public class deployItem : MonoBehaviour
         }
         else {
             a = Instantiate(meteor) as GameObject;
+           // a = Instantiate(suplyLife) as GameObject;
         }
         
          a.transform.position = new Vector2(screenBounds.x * 2, Random.Range(screenBounds.y, -screenBounds.y));
@@ -45,4 +47,26 @@ public class deployItem : MonoBehaviour
             spawnEnemy();
         }
      }
+
+    IEnumerator suplyWave()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5);
+            tryRespawnSuply();
+        }
+    }
+
+
+    private void tryRespawnSuply()
+    {
+        int r = Random.Range(0, 100);
+        if(r < 100)
+        {
+            GameObject a = Instantiate(suplyLife) as GameObject;
+            a.transform.position = new Vector2(screenBounds.x * 2, Random.Range(screenBounds.y, -screenBounds.y));
+        
+
+    }
+    }
 }

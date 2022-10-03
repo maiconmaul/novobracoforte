@@ -12,15 +12,18 @@ public class squareMovement : MonoBehaviour
    
    // public GameObject explosion;
 
-    static SpaceShip ship;
     public TextMeshProUGUI dnaText;
     public Slider slider;
     // Start is called before the first frame update
     void Start()
     {
-        ship = new SpaceShip(4,4);
-        slider.maxValue = ship.getResistence();
-        slider.value = ship.getResistence();
+        //ship = new SpaceShip(4,4);
+        slider.maxValue = Storages.MainSpaceShip.ResistenceMax;
+        slider.value = Storages.MainSpaceShip.getResistence();
+        String txt = Storages.MainSpaceShip.DnaCount.ToString();
+        if (txt.Length == 1)
+            txt = "0" + txt;
+        dnaText.text = txt;
     }
     public float vel = 0.1f;
     // Update is called once per frame
@@ -53,12 +56,12 @@ public class squareMovement : MonoBehaviour
         if (other.gameObject.tag == "Meteor")
         {
             Destroy(other.gameObject);
-            ship.removeLife(1);
+            Storages.MainSpaceShip.removeLife(1);
             slider.value -= 1;
         }
         else if (other.gameObject.tag == "dna") {
-            ship.addDna(1);
-            String txt = ship.DnaCount.ToString();
+            Storages.MainSpaceShip.addDna(1);
+            String txt = Storages.MainSpaceShip.DnaCount.ToString();
             if (txt.Length == 1)
                 txt = "0" + txt;
             dnaText.text = txt;
@@ -66,12 +69,22 @@ public class squareMovement : MonoBehaviour
         }
         if (other.gameObject.tag == "radiation")
         {
-
-            ship.removeLife(2);
+            Storages.MainSpaceShip.removeLife(2);
             slider.value -= 2;
         }
 
-        if (ship.getResistence() == 0)
+        if (other.gameObject.tag == "life")
+        {
+            if(Storages.MainSpaceShip.getResistence() < Storages.MainSpaceShip.ResistenceMax)
+            {
+                Storages.MainSpaceShip.addResistence(1);
+                slider.value += 1;
+              
+            }
+            Destroy(other.gameObject);
+        }
+
+        if (Storages.MainSpaceShip.getResistence() <= 0)
         {
             this.gameObject.SetActive(false);
             SceneManager.LoadScene("PlanetScene");
