@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 public class Upgrades
 {
-    private int id, name, quantityPurchased, cost, radiationBonus, resistanceBonus, sanityBonus, healPoints;
+    private int id, quantityPurchased, cost, radiationBonus, resistanceBonus, sanityBonus, healPoints;
+    private string name;
     
     public Upgrades(int id, string name, int cost, int radiationBonus, int resistanceBonus, int sanityBonus, int healPoints)
     {
